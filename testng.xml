@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org">
+
+
+<suite name="PetSuite">
+
+    <!-- Registers your custom report listener -->
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager" />
+    </listeners>
+
+    <test thread-count="5" name="PetTests">
+        <classes>
+            <!-- Your sequential data-driven/regular test classes -->
+            <class name="api.testcases.UserTests"/>
+            <class name="api.testcases.DDTests"/>
+        </classes>
+    </test> <!-- PetTests -->
+
+</suite> <!-- PetSuite -->
